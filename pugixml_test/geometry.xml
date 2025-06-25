@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<geometry>
+	<surface coeffs="0.0 0.0 0.469550" id="1" type="z-cylinder" />
+	<surface coeffs="0.0 0.0 0.479100" id="2" type="z-cylinder" />
+	<surface coeffs="0.0 0.0 0.546400" id="3" type="z-cylinder" />
+	<surface boundary="vacuum" coeffs="150.000000" id="4" type="z-plane" />
+	<surface boundary="vacuum" coeffs="-150.000000" id="5" type="z-plane" />
+	<surface boundary="reflective" coeffs="-0.721350" id="6" type="x-plane" />
+	<surface boundary="reflective" coeffs="0.721350" id="7" type="x-plane" />
+	<surface boundary="reflective" coeffs="-0.721350" id="8" type="y-plane" />
+	<surface boundary="reflective" coeffs="0.721350" id="9" type="y-plane" />
+	<cell id="1" material="2" region="-1 -4 5" universe="1" />
+	<cell id="2" material="void" region="1 -2 -4 5" universe="1" />
+	<cell id="3" material="1" region="2 -3 -4 5" universe="1" />
+	<cell id="4" material="3" region="3 -4 5 6 -7 8 -9" universe="1" />
+</geometry>
